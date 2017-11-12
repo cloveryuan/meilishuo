@@ -1,0 +1,203 @@
+@function num($val){
+	@return $val/20;
+}
+html,body{
+	height:100%;
+	font-size:20px;
+	background:#fff;
+}
+body,html,div,i,em,span,ul,li,img,input,p,a,h3,h4,h5,dl,dt,dd,input{
+	padding:0;
+	margin:0;
+}
+i,em,li{
+	font-style:normal;
+}
+li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+@mixin i($val1,$val2,$val3){
+	font-size:$val1;
+	color:$val2;
+	font-family:$val3;
+}
+@mixin nomal($val1,$val2){
+	font-size:$val1;
+	color:$val2;
+}
+@mixin position($num1,$num2){
+	position:absolute;
+	top:$num1;
+	left:$num2;
+}
+@mixin HeWid($num1,$num2,$num3){
+	height:$num1;
+	width:$num2;
+	background:$num3;
+}
+@mixin bordRid($num1){
+	border-radius:$num1;
+}
+@mixin opacity($num1,$num23){
+	opacity:$num1;
+	filter:alpha(opacity=$num2);
+}
+#header{
+	width:num(320rem);
+	height:num(38rem);
+	border-bottom:1px solid #c9c7c8;
+	text-align:center;
+	i{
+		font-family:"iconfont";
+		float:left;
+		display:inline-block;
+		line-height:num(38rem);
+		@include nomal(num(14rem),#939393);
+		padding-left:num(15rem);
+	}
+	span{
+		display:inline-block;
+		line-height:num(38rem);
+		@include nomal(num(13rem),#5e5e5e);
+		padding-right:num(29rem);		
+	}
+}
+#center{
+	padding:0 num(12rem);
+	overflow:hidden;
+}
+#location{
+	padding:num(29rem)  0 num(24rem) 0 ;
+	text-align:center;
+	@include nomal(num(12rem),#939393);
+	text-align:center;
+}
+#china{
+	text-align:center;
+	font-size:num(23rem);
+	position:relative;
+	font-size:num(22rem);
+	em{
+		font-size:num(18rem);
+		color:#333;
+		display:inline-block;
+		line-height:num(22rem);
+	}
+	i{
+		position:absolute;
+		right:num(14rem);
+		top:num(2rem);
+		font-family:"iconfont";
+		color:#c2c2c2;
+		font-weight:500;
+	}
+	span{
+		color:#999;
+	}
+	p{
+		color:#333333;
+		display:inline-block;
+	}
+}
+#phone-numb{
+	padding:num(19rem)  0 num(15rem) 0 ;
+	text-align:center;
+	@include nomal(num(12rem),#666);
+}
+#inp1{
+	border-bottom:1px solid #ededed;
+	color:#ededed;
+	width:100%;
+	height:num(34rem);
+	input{
+		width:100%;
+		outline:none;
+		border:none;
+		text-align:center;
+		line-height:num(34rem);
+	}
+}
+input::-webkit-input-placeholder{
+	color:#ccc;
+	font-size:num(22rem);
+}
+input:-moz-input-placeholder{
+	color:#ccc;
+	font-size:num(22rem);
+}
+input::-moz-input-placeholder{
+	color:#ccc;
+	font-size:num(22rem);
+}
+input::-ms-input-placeholder{
+	color:#ccc;
+	font-size:num(22rem);
+}
+#code{
+	padding:num(19rem)  0 num(13rem) 0 ;
+	text-align:center;
+	@include nomal(num(12rem),#666);
+	text-align:center;
+}
+#inp2{
+	@extend #inp1;
+	width:num(224rem);
+	position:relative;
+	text-align:right;
+	input{
+		width:num(159rem);
+		text-align:center;
+	}
+}
+#send-code{
+	color:#ff6885;
+	font-size:num(13rem);
+	position:absolute;
+	bottom:0;
+	right:num(-70rem);
+}
+#reg{
+	padding-top:num(21rem);
+	height:num(72rem);
+	width:100%;
+	.btn-inp{
+		overflow:hidden;
+		width:100%;
+		height:num(42rem);
+		margin: 0 auto;
+		padding-bottom:10px;
+		input{
+			width:100%;
+			height:100%;
+			text-align:center;
+			color:#fff;
+			font-size:num(12rem);
+			background:#ff1877;
+			border:0;
+			outline:0;
+			border-radius:num(4rem);
+		}
+	}
+	span{
+		color:#ff6885;
+		font-size:num(13rem);
+	}
+	span:nth-child(2){
+		float:left;		
+	}
+	span:nth-child(3){
+		float:right;
+	}
+}
+#QQ{
+	margin-top:num(84rem);
+	overflow: hidden;
+	text-align:center;
+	img{
+		height:numm(90rem);
+		width:num(40rem);
+	}
+}

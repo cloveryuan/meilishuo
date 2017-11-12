@@ -1,0 +1,165 @@
+html, body {
+  height: 100%;
+  font-size: 20px;
+  background: #fff; }
+
+body, html, div, i, em, span, ul, li, img, input, p, a, h3, h4, h5, dl, dt, dd, input {
+  padding: 0;
+  margin: 0; }
+
+i, em, li {
+  font-style: normal; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+#header {
+  width: 16rem;
+  height: 1.9rem;
+  border-bottom: 1px solid #c9c7c8;
+  text-align: center; }
+  #header i {
+    font-family: "iconfont";
+    float: left;
+    display: inline-block;
+    line-height: 1.9rem;
+    font-size: 0.7rem;
+    color: #939393;
+    padding-left: 0.75rem; }
+  #header span {
+    display: inline-block;
+    line-height: 1.9rem;
+    font-size: 0.65rem;
+    color: #5e5e5e;
+    padding-right: 1.45rem; }
+
+#center {
+  padding: 0 0.6rem;
+  overflow: hidden; }
+
+#location {
+  padding: 1.45rem 0 1.2rem 0;
+  text-align: center;
+  font-size: 0.6rem;
+  color: #939393;
+  text-align: center; }
+
+#china {
+  text-align: center;
+  font-size: 1.15rem;
+  position: relative;
+  font-size: 1.1rem; }
+  #china em {
+    font-size: 0.9rem;
+    color: #333;
+    display: inline-block;
+    line-height: 1.1rem; }
+  #china i {
+    position: absolute;
+    right: 0.7rem;
+    top: 0.1rem;
+    font-family: "iconfont";
+    color: #c2c2c2;
+    font-weight: 500; }
+  #china span {
+    color: #999; }
+  #china p {
+    color: #333333;
+    display: inline-block; }
+
+#phone-numb {
+  padding: 0.95rem 0 0.75rem 0;
+  text-align: center;
+  font-size: 0.6rem;
+  color: #666; }
+
+#inp1, #inp2 {
+  border-bottom: 1px solid #ededed;
+  color: #ededed;
+  width: 100%;
+  height: 1.7rem; }
+  #inp1 input, #inp2 input {
+    width: 100%;
+    outline: none;
+    border: none;
+    text-align: center;
+    line-height: 1.7rem; }
+
+input::-webkit-input-placeholder {
+  color: #ccc;
+  font-size: 1.1rem; }
+
+input:-moz-input-placeholder {
+  color: #ccc;
+  font-size: 1.1rem; }
+
+input::-moz-input-placeholder {
+  color: #ccc;
+  font-size: 1.1rem; }
+
+input::-ms-input-placeholder {
+  color: #ccc;
+  font-size: 1.1rem; }
+
+#code {
+  padding: 0.95rem 0 0.65rem 0;
+  text-align: center;
+  font-size: 0.6rem;
+  color: #666;
+  text-align: center; }
+
+#inp2 {
+  width: 11.2rem;
+  position: relative;
+  text-align: right; }
+  #inp2 input {
+    width: 7.95rem;
+    text-align: center; }
+
+#send-code {
+  color: #ff6885;
+  font-size: 0.65rem;
+  position: absolute;
+  bottom: 0;
+  right: -3.5rem; }
+
+#reg {
+  padding-top: 1.05rem;
+  height: 3.6rem;
+  width: 100%; }
+  #reg .btn-inp {
+    overflow: hidden;
+    width: 100%;
+    height: 2.1rem;
+    margin: 0 auto;
+    padding-bottom: 10px; }
+    #reg .btn-inp input {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      color: #fff;
+      font-size: 0.6rem;
+      background: #ff1877;
+      border: 0;
+      outline: 0;
+      border-radius: 0.2rem; }
+  #reg span {
+    color: #ff6885;
+    font-size: 0.65rem; }
+  #reg span:nth-child(2) {
+    float: left; }
+  #reg span:nth-child(3) {
+    float: right; }
+
+#QQ {
+  margin-top: 4.2rem;
+  overflow: hidden;
+  text-align: center; }
+  #QQ img {
+    height: numm(90rem);
+    width: 2rem; }
+
+/*# sourceMappingURL=reg.css.map */

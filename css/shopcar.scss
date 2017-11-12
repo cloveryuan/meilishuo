@@ -1,0 +1,249 @@
+@function num($val){
+	@return $val/20;
+}
+html,body{
+	height:100%;
+	font-size:20px;
+	background:#f6f6f6;
+}
+body,html,div,i,em,span,ul,li,img,input,p,a,,h2,h3,h4,h5,dl,dt,dd,input,label{
+	padding:0;
+	margin:0;
+}
+i,em,li,label{
+	font-style:normal;
+}
+li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+@mixin i($val1,$val2,$val3){
+	font-size:$val1;
+	color:$val2;
+	font-family:$val3;
+}
+@mixin nomal($val1,$val2){
+	font-size:$val1;
+	color:$val2;
+}
+@mixin position($num1,$num2){
+	position:absolute;
+	top:$num1;
+	left:$num2;
+}
+@mixin HeWid($num1,$num2,$num3){
+	height:$num1;
+	width:$num2;
+	background:$num3;
+}
+@mixin bordRid($num1){
+	border-radius:$num1;
+}
+@mixin opacity($num1,$num23){
+	opacity:$num1;
+	filter:alpha(opacity=$num2);
+}
+#header{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:num(38rem);
+	line-height:num(38rem);
+	background:#fafafa;
+	border-bottom:1px solid #c9c7c8;
+	box-sizing:border-box;
+	text-align:center;
+	overflow:hidden;
+    i,em{
+		font-family:"iconfont";
+ 		display:inline-block;
+ 		line-height:num(38rem);
+ 		@include nomal(num(13rem),#939393);
+	}
+	label{
+	    text-align:center;
+	    font-size:num(13rem);
+	    color: #5e5e5e;
+	    padding:0 num(73rem) 0 num(106rem);
+	    span{
+	    	padding:0 num(2rem);
+	    }
+	}
+	i{
+		float:left;
+		padding-left:num(13rem);
+	}
+	em{
+		float:right;
+		padding-right:num(6rem);
+	}
+	p{
+		display:inline-block;
+		float:right;
+		margin-right:num(9rem);
+		color:#727272;
+		line-height:num(38rem);
+ 		@include nomal(num(13rem),#939393);
+	}
+}
+#title-img{
+	background-image:url(../img/shopcar/shopcar1.gif);
+	width:100%;
+	height:num(48rem);
+	background-size:cover;
+	margin-top:num(38rem);
+}
+#shopcar{
+	margin-top:num(10rem);
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom:num(10rem);
+	h3{
+		padding:num(7rem) num(13rem);
+	    font-size: num(13rem);
+	    font-weight: 400;
+	    background: #fff;
+		border-bottom: 1px solid #e5e5e5;
+		background:#fff;
+		.inp1{
+			width: num(18rem);
+		    height:num(18rem);
+		    margin-right:num(9rem);
+		    background: url(../img/shopcar/checkbox.png) 0 100% no-repeat;
+		    background-size:cover;
+		    border:none;
+		    outline:none;
+		    vertical-align:middle;
+		}
+		a{
+			color:#5e5e5e;
+			font-size:num(12rem);
+		}
+		.tick{
+			float:right;
+			font-size:num(11rem);
+			color:#5e5e5e;
+		}
+	}
+	.tit2{
+		overflow-X:hidden;
+		padding:num(14rem);
+		position:relative;
+		background:#fff;
+		.inp2{
+			width: num(18rem);
+		    height:num(18rem);
+		    background: url(../img/shopcar/checkbox.png) 0 100% no-repeat;
+		    background-size:num(18rem) auto;//cover
+		    border:none;
+		    outline:none;
+		    vertical-align:middle;
+		    margin-right:num(16rem);
+		    position:absolute;
+		    left:num(13rem);
+		    top:num(35rem);
+		}
+		a{
+			display:inline-block;
+			padding-left:num(33rem);
+			float:left;
+			img{
+				height:num(80rem);
+				width:num(56rem);
+			    visibility:inherit;
+			    display:inherit;
+			}
+		}
+		.mess{
+			overflow:hidden;
+			line-height:num(18rem);
+			padding-left:num(12rem);
+			position:relative;
+			p{
+				color:#5e5e5e;
+				font-size:num(11rem);
+			}
+			em{
+				font-size:num(10rem);
+			    display:block;
+			    color:#999;
+			    font-weight:450;
+			}
+			b,del,span{
+				color:#333;
+				display:inline-block;
+				font-size:num(12rem);
+			}
+			del{
+				color:#999;
+				margin-left:num(4rem);
+			}
+			span{
+				color:#999;
+				position:absolute;
+				right:0;
+				bottom:0;
+
+			}
+		}
+	}
+	input[type=checkbox]{
+		-webkit-appearance:none;
+   	    -webkit-user-select:text;
+	}
+}
+#footer{
+	width:num(320rem);
+	position:fixed;
+	bottom:0;
+	left:0;
+	overflow:hidden;
+	padding:num(16rem) num(14rem);
+	background:#fefefe;
+	font-size:num(12rem);
+	box-sizing:border-box;
+	input{
+		width:num(18rem);
+	    height:num(18rem);
+	    margin-right:num(9rem);
+	    background:url(../img/shopcar/checkbox.png) 0 100% no-repeat;
+	    background-size:num(18rem) auto;//cover
+	    border:none;
+	    outline:none;
+	    vertical-align:middle;
+	}
+	input[type=checkbox]{
+		-webkit-appearance:none;
+   	    -webkit-user-select:text;
+	}
+	label{
+		color:#5e5e5e;
+		// line-height:num(20rem);
+		span{
+			margin: 0 num(5rem);
+		}
+	}
+	i{
+		color:#f04595;
+		margin-left:num(10rem);
+		line-height:num(15rem);
+	}
+	a{	
+		display:inline-block;
+		background:#ff5777;
+		height:num(30rem);
+		width:num(86rem);
+		color:#fff;
+		text-align:center;
+		line-height:num(30rem);
+		font-size:num(14rem);
+		font-weight:500;
+		border-radius:num(5rem);
+		position:absolute;
+		right:num(18rem);
+		bottom:num(8rem);
+	}
+}

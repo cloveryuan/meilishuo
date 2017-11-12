@@ -1,0 +1,138 @@
+html, body {
+  height: 100%;
+  font-size: 20px;
+  background: #f6f6f6; }
+
+body, html, div, i, em, span, ul, li, img, input, p, a, h3, h4, h5, dl, dt, dd {
+  padding: 0;
+  margin: 0; }
+
+i, em, li {
+  font-style: normal; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+#best, #fashion, #clear {
+  height: 14.35rem;
+  width: 100%;
+  background: #fff;
+  margin-bottom: 0.5rem; }
+  #best .best-tittle, #fashion .best-tittle, #clear .best-tittle, #fashion .fashion-tittle, #clear .clear-tittle {
+    height: 1.85rem;
+    width: 100%;
+    background: url(../img/bg.png) no-repeat center center;
+    background-size: 6.55rem 0.5rem; }
+    #best .best-tittle p, #fashion .best-tittle p, #clear .best-tittle p, #fashion .fashion-tittle p, #clear .clear-tittle p {
+      font-size: 0.6rem;
+      text-align: center;
+      line-height: 1.85rem; }
+  #best .best-content, #fashion .best-content, #clear .best-content, #fashion .fashion-content {
+    height: 12.5rem;
+    width: 16rem;
+    background: #fff; }
+    #best .best-content a, #fashion .best-content a, #clear .best-content a, #fashion .fashion-content a {
+      display: inline-block;
+      height: 4rem;
+      width: 3.7rem;
+      background: #fff;
+      text-align: center;
+      margin: 0 auto; }
+      #best .best-content a img, #fashion .best-content a img, #clear .best-content a img, #fashion .fashion-content a img {
+        height: 2.65rem;
+        width: 2.65rem;
+        background: #fff; }
+      #best .best-content a p, #fashion .best-content a p, #clear .best-content a p, #fashion .fashion-content a p {
+        font-size: 0.6rem;
+        color: #333; }
+
+#fashion {
+  height: 6.3rem;
+  width: 16rem;
+  background: #fff; }
+  #fashion .fashion-content {
+    height: 4.4rem;
+    width: 16rem;
+    background: #fff; }
+
+#clear {
+  height: 1.85rem;
+  width: 16rem;
+  background: 0; }
+  #clear .clear-tittle {
+    margin: 0.8rem 0; }
+
+#nav {
+  height: 1.6rem;
+  width: 16rem;
+  background: #ff0077;
+  font-size: 0.6rem;
+  color: #fff;
+  padding: 0.45rem 0;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden; }
+  #nav span {
+    display: inline-block;
+    text-align: center;
+    padding: 0 0.8rem; }
+
+.shadow {
+  height: 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 0 #ccc;
+  box-sizing: border-box;
+  margin-top: 0.2rem; }
+
+#pic {
+  width: 100%;
+  overflow: hidden; }
+  #pic dl {
+    height: 12.5rem;
+    width: 7.3rem;
+    background: #fff;
+    margin: 0.3rem 0.3rem;
+    float: left; }
+  #pic dt {
+    height: 9.85rem;
+    width: 7.3rem;
+    background: #fff; }
+    #pic dt img {
+      height: 9.75rem;
+      width: 7.3rem;
+      background: 0; }
+  #pic dd {
+    height: 2.6rem;
+    width: 7.05rem;
+    background: #fff;
+    font-size: 0;
+    margin-left: 0.25rem; }
+    #pic dd span {
+      display: inline-block;
+      background: #eff3f6;
+      height: 0.8rem;
+      max-width: 6.5rem;
+      line-height: 0.8rem;
+      padding: 0.1rem 0.15rem;
+      font-size: 0.55rem;
+      color: #64757e;
+      margin: 0.1rem 0.15rem 0 0; }
+    #pic dd h4 {
+      font-size: 0.5rem;
+      color: #000;
+      margin-top: 0.25rem;
+      max-width: 2rem;
+      float: left; }
+    #pic dd i, #pic dd em {
+      float: right;
+      display: inline-block;
+      font-size: 0.5rem;
+      color: #7a7d7d;
+      float: right;
+      margin-top: 0.25rem; }
+
+/*# sourceMappingURL=list.css.map */

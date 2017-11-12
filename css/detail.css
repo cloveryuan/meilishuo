@@ -1,0 +1,619 @@
+html, body {
+  height: 100%;
+  font-size: 20px;
+  background: #f6f6f6; }
+
+body, html, div, i, em, span, ul, li, img, big, input, p, a, h3, h4, h5, h6, dl, dt, dd, b, del {
+  padding: 0;
+  margin: 0; }
+
+i, em, li, b {
+  font-style: normal; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+h4 {
+  font-weight: normal; }
+
+#modd1, #sale, #select-color, #evaluate, #shop-message, #brand {
+  background: #fff;
+  margin-top: 0.5rem;
+  padding: 0 0.65rem;
+  overflow: hidden; }
+
+#modd2-detail, #details .ellect span {
+  padding: 0 0.65rem;
+  line-height: 1.4rem;
+  overflow: hidden;
+  font-size: 0.6rem;
+  color: #303030; }
+
+#cover {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  display: none; }
+
+#header {
+  height: 27.2rem;
+  width: 16rem;
+  background: #fff; }
+  #header .img {
+    height: 19.2rem;
+    width: 100%;
+    background: url(../img/details/1.jpg) no-repeat;
+    background-size: cover;
+    position: relative; }
+    #header .img .nu {
+      height: 0.85rem;
+      width: 2.4rem;
+      display: block;
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 0.4rem;
+      font-size: 0.45rem;
+      color: #fff;
+      line-height: 0.85rem;
+      text-align: center;
+      position: absolute;
+      bottom: 0.45rem;
+      right: 0.6rem; }
+  #header .text {
+    height: 8rem;
+    width: 100%;
+    background: #fff;
+    padding: 0.75rem 0.5rem 0 0.65rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative; }
+    #header .text h4 {
+      font-size: 0.65rem;
+      color: #424242;
+      font-weight: 520;
+      line-height: 0.7rem; }
+    #header .text .money {
+      margin-top: 0.6rem;
+      overflow: hidden;
+      height: 1.35num; }
+      #header .text .money i {
+        font-size: 0.45rem;
+        color: #424242;
+        display: inline-block;
+        float: left;
+        padding-top: 0.25rem; }
+      #header .text .money h5 {
+        font-size: 1.2rem;
+        color: #333;
+        display: inline-block;
+        float: left; }
+      #header .text .money .money-r {
+        float: left;
+        overflow: hidden;
+        margin-top: -0.1rem; }
+      #header .text .money em {
+        font-size: 0.45rem;
+        color: #999;
+        text-decoration: line-through;
+        margin-left: 0.25rem; }
+      #header .text .money span {
+        font-size: 0.45rem;
+        color: #ff2255;
+        box-sizing: border-box;
+        width: 1.4rem;
+        text-align: center;
+        display: block;
+        padding: 0 0.2rem 0.1rem 0.2rem;
+        overflow: hidden;
+        background: #ffe8ee;
+        margin-left: 0.25rem; }
+    #header .text .pinkage {
+      font-size: 0.55rem;
+      color: #999;
+      line-height: 1.6rem;
+      border-bottom: 0.02rem solid #eee; }
+    #header .text .pay {
+      line-height: 1.75rem;
+      font-size: 0.55rem;
+      color: #a5a5a5; }
+      #header .text .pay i {
+        font-size: 0.55rem;
+        color: #a5a5a5;
+        font-family: "iconfont";
+        line-height: 0.25rem; }
+      #header .text .pay i:nth-child(3) {
+        margin-left: 0.3rem; }
+      #header .text .pay i:nth-child(5) {
+        margin-left: 1.75rem; }
+      #header .text .pay em {
+        float: right; }
+
+#sale p {
+  line-height: 1.75rem;
+  font-size: 0.6rem;
+  color: #999; }
+#sale ul {
+  overflow: hidden;
+  height: 1.9rem;
+  white-space: nowrap;
+  width: 14.65rem;
+  margin-bottom: 0.65rem; }
+  #sale ul li {
+    height: 1.9rem;
+    width: 3.7rem;
+    border-radius: 0.2rem;
+    font-size: 0.75rem;
+    color: #fff;
+    text-align: center;
+    margin-right: 0.15rem;
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: text-top;
+    background: linear-gradient(to right, #ff547a 20%, #ff527d 40%, #ff4e83 60%, #ff468e 90%); }
+    #sale ul li i:nth-child(1) {
+      font-size: 0.5rem;
+      vertical-align: text-top;
+      line-height: 0.9rem;
+      height: 0.5rem; }
+    #sale ul li i:nth-child(2) {
+      font-weight: 550;
+      vertical-align: text-top; }
+    #sale ul li p {
+      font-size: 0.5rem;
+      color: #fff;
+      line-height: 0.75rem;
+      font-weight: 500; }
+#sale .sale-bottom {
+  height: 3rem;
+  width: 100%;
+  background: #fff;
+  padding: 0.7rem 0;
+  box-sizing: border-box;
+  border-top: 0.02rem solid #eee; }
+  #sale .sale-bottom .tit1, #sale .sale-bottom .tit2 {
+    line-height: 0.6rem;
+    color: #999;
+    font-size: 0.6rem;
+    max-width: 10.5rem; }
+    #sale .sale-bottom .tit1 .tit1color, #sale .sale-bottom .tit2 .tit1color, #sale .sale-bottom .tit1 .tit2 span, #sale .sale-bottom .tit2 .tit1 span, #sale .sale-bottom .tit2 span {
+      display: inline-block;
+      padding: 0.15rem;
+      padding-top: 0;
+      width: 1.5rem;
+      box-sizing: border-box;
+      font-size: 0.6rem;
+      color: white;
+      background: linear-gradient(to right, #ff9703 30%, #fb830d 60%, #f86e1b 80%); }
+  #sale .sale-bottom .tit2 {
+    margin-top: 0.2rem;
+    white-space: nowrap; }
+    #sale .sale-bottom .tit2 span {
+      background: linear-gradient(to right, #9358fb 30%, #8c50fc 60%, #7d3eff 80%); }
+  #sale .sale-bottom .sb-r {
+    font-size: 0.55rem;
+    color: #999;
+    float: right;
+    line-height: 1.6rem; }
+  #sale .sale-bottom .sb-l {
+    float: left; }
+
+#select-color {
+  font-size: 0.6rem;
+  color: #666;
+  line-height: 2rem;
+  font-weight: 500; }
+  #select-color em {
+    float: right; }
+
+#evaluate .evalu-tittle {
+  line-height: 1.75rem; }
+  #evaluate .evalu-tittle span, #evaluate .evalu-tittle em {
+    font-size: 0.6rem;
+    color: #999; }
+  #evaluate .evalu-tittle em {
+    float: right; }
+#evaluate .label {
+  max-width: 14.5rem;
+  overflow: hidden; }
+  #evaluate .label p {
+    padding: 0.25rem;
+    font-size: 0.6rem;
+    color: #ff2255;
+    background: #ffe8ee;
+    border-radius: 0.2rem;
+    display: inline-block;
+    box-sizing: border-box;
+    line-height: 0.6rem;
+    margin-bottom: 0.2rem; }
+    #evaluate .label p b {
+      font-weight: 530; }
+#evaluate .content {
+  padding-top: 0.75rem;
+  border-bottom: 0.02rem solid #EEE; }
+  #evaluate .content img {
+    height: 1.3rem;
+    width: 1.3rem;
+    float: left; }
+  #evaluate .content big {
+    font-size: 0.6rem;
+    color: #424242;
+    display: inline-block;
+    padding: 0.4rem 0 0.3rem 0.5rem;
+    box-sizing: border-box;
+    float: left; }
+  #evaluate .content p {
+    line-height: 1.5rem;
+    clear: both;
+    font-size: 0.6rem;
+    color: #727272; }
+  #evaluate .content h6 {
+    font-size: 0.45rem;
+    color: #999;
+    padding-bottom: 1.25rem;
+    font-weight: 550; }
+
+#shop-message {
+  padding-top: 0.9rem; }
+  #shop-message .shopname {
+    max-width: 9rem;
+    float: left; }
+    #shop-message .shopname .name {
+      height: 2.1rem;
+      width: 2.1rem;
+      float: left; }
+    #shop-message .shopname h5 {
+      font-size: 0.6rem;
+      color: #333;
+      font-weight: 545;
+      line-height: 1rem;
+      clear: both;
+      display: inline-block;
+      margin-left: 0.4rem; }
+    #shop-message .shopname .xing {
+      height: 0.6rem;
+      width: 2.8rem;
+      background: url(../img/details/xing.png) repeat-X;
+      background-size: 20% 45%;
+      margin-top: 0.2rem;
+      margin-left: 0.4rem;
+      float: left; }
+  #shop-message .enter-shop {
+    float: right; }
+    #shop-message .enter-shop a {
+      padding: 0.35rem 0.6rem;
+      font-size: 0.6rem;
+      color: #ff5777;
+      border: 0.02rem solid #ff5777;
+      display: inline-block; }
+  #shop-message .clearfloat {
+    clear: both; }
+  #shop-message .sales-number {
+    clear: both;
+    margin-top: 0.55rem;
+    overflow: hidden;
+    padding-bottom: 0.75rem; }
+    #shop-message .sales-number li {
+      width: 4.8rem;
+      height: 2.7rem;
+      text-align: center;
+      float: left; }
+      #shop-message .sales-number li h5 {
+        font-size: 0.6rem;
+        color: #333;
+        padding-top: 0.35rem; }
+      #shop-message .sales-number li p {
+        font-size: 0.6rem;
+        color: #999; }
+    #shop-message .sales-number li:nth-child(2) {
+      border-left: 0.02rem solid #e5e5e5;
+      border-right: 0.02rem solid #e5e5e5; }
+    #shop-message .sales-number li:nth-child(3) h4 {
+      line-height: 0.6rem; }
+      #shop-message .sales-number li:nth-child(3) h4 span {
+        font-size: 0.6rem;
+        color: #999;
+        line-height: 0.75rem; }
+      #shop-message .sales-number li:nth-child(3) h4 i {
+        font-size: 0.45rem;
+        color: #ff5777;
+        line-height: 0.75rem; }
+    #shop-message .sales-number li h4:nth-child(1) {
+      padding-top: 0.35rem; }
+
+#details {
+  background: #fff;
+  margin-top: 0.5rem;
+  overflow: hidden; }
+  #details .top {
+    overflow: hidden;
+    border-bottom: 0.02rem solid #d9d9d9; }
+    #details .top li {
+      font-size: 0.7rem;
+      color: #ff5777;
+      float: left;
+      padding: 0.6rem 1.25rem; }
+  #details .shopdetal {
+    margin: 0.75rem 0.7rem 0.4rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative; }
+    #details .shopdetal i, #details .shopdetal em {
+      width: 88px;
+      height: 10px;
+      display: block; }
+  #details i {
+    background: url(../img/details/bg.png) -233px 0 no-repeat; }
+  #details em {
+    background: url(../img/details/bg.png) no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+  #details p {
+    font-size: 0.55rem;
+    color: #727272;
+    padding: 0.7rem 0; }
+  #details .ellect img {
+    width: 100%;
+    height: 24rem; }
+
+#brand {
+  margin-top: 0;
+  padding-top: 0.5rem; }
+  #brand h5 {
+    line-height: 1rem;
+    font-size: nmu(12rem);
+    color: #303030; }
+  #brand p {
+    line-height: 1rem;
+    font-size: 0.6rem;
+    color: #727272;
+    text-indent: 0.7rem; }
+
+#price {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  text-align: center; }
+  #price img {
+    height: 3.65rem;
+    width: 15.5rem; }
+
+#size {
+  padding: 1.15rem 0.65rem 0;
+  background: #fff;
+  box-sizing: border-box;
+  font-size: 0.6rem; }
+  #size table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #727272; }
+    #size table tr {
+      vertical-align: middle;
+      border-bottom: .02rem solid #f4f4f4;
+      height: 1.85rem;
+      line-height: 1.85rem; }
+      #size table tr td:first-child {
+        width: 4.35rem; }
+    #size table .redcolor {
+      color: #eb4868; }
+    #size table .redcolor td:first-child {
+      color: #727272; }
+  #size li {
+    border-bottom: 0.02rem solid #f4f4f4;
+    white-space: nowrap;
+    overflow: hidden; }
+    #size li span {
+      line-height: 1.4rem;
+      width: 4.35rem;
+      color: #727272;
+      display: inline-block; }
+    #size li span:nth-child(2) {
+      color: #eb4868; }
+
+#img-list {
+  background: #fff;
+  padding: 0 0.65rem; }
+  #img-list img:first-child {
+    width: 14.75rem;
+    height: 17.4rem; }
+  #img-list img:nth-child(2) {
+    width: 14.75rem;
+    height: 21.8rem; }
+  #img-list img:nth-child(3) {
+    width: 14.75rem;
+    height: 22.3rem; }
+  #img-list img:nth-child(4) {
+    width: 14.75rem;
+    height: 10.35rem; }
+
+#bottom {
+  background: #fff;
+  padding: 0.5rem 0; }
+  #bottom ul {
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0 0.65rem; }
+    #bottom ul li {
+      width: 31%;
+      margin-right: 2%;
+      float: left; }
+      #bottom ul li a {
+        display: inline-block;
+        width: 100%;
+        overflow: hidden; }
+        #bottom ul li a .img {
+          width: 100%;
+          height: 7.1rem; }
+        #bottom ul li a .mess {
+          overflow: hidden;
+          box-sizing: border-box; }
+          #bottom ul li a .mess p {
+            line-height: 1.1rem;
+            height: 1.1rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 0.55rem;
+            color: #525252; }
+          #bottom ul li a .mess span {
+            overflow: hidden;
+            display: block;
+            height: 0.6rem;
+            font-size: 0.5rem;
+            color: #525252; }
+            #bottom ul li a .mess span i {
+              float: left;
+              max-width: 35%; }
+            #bottom ul li a .mess span em {
+              display: block;
+              max-width: 35%;
+              float: right;
+              margin-right: 0.7rem;
+              padding-left: 0.7rem;
+              background: url(../img/details/love.png) center left no-repeat;
+              background-size: auto 0.5rem; }
+
+#footernav {
+  padding-top: 0.5rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  overflow: hidden; }
+  #footernav ul:first-child li {
+    overflow: hidden;
+    border-right: 1px solid #ededed;
+    border-top: 1px solid #ededed;
+    height: 2.25rem;
+    width: 2.25rem;
+    line-height: 2.25rem;
+    font-weight: 530;
+    float: left; }
+    #footernav ul:first-child li i {
+      font-family: "iconfont";
+      font-size: 0.8rem;
+      color: #666666;
+      text-align: center;
+      display: block;
+      line-height: 1.2rem; }
+    #footernav ul:first-child li p {
+      font-size: 0.55rem;
+      color: #666;
+      text-align: center;
+      line-height: 0.75rem; }
+  #footernav ul:nth-child(2) li {
+    overflow: hidden;
+    border-right: 1px solid #ededed;
+    border-top: 1px solid #ededed;
+    height: 2.25rem;
+    line-height: 2.25rem;
+    font-weight: 530;
+    float: left;
+    width: 5.6rem;
+    font-size: 0.55rem;
+    text-align: center;
+    color: #fff; }
+
+.cir {
+  background: #000;
+  height: 2.5rem;
+  width: 2.5rem;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  border-radius: 50%;
+  font-size: 0.55rem;
+  color: #fff;
+  padding: 0.6rem;
+  box-sizing: border-box;
+  z-index: 30; }
+  .cir span {
+    display: block;
+    text-align: center;
+    line-height: 0.7rem; }
+
+.cirbox {
+  position: fixed;
+  bottom: 2.5rem;
+  right: 0.5rem;
+  z-index: 10; }
+
+#cir2 {
+  margin-top: 0.75rem; }
+  #cir2 .pic {
+    height: 0.7rem;
+    width: 0.7rem;
+    display: block;
+    background: url(../img/details/weixin.png) no-repeat;
+    background-size: 100%;
+    margin: 0 auto; }
+
+#cir3 {
+  display: none;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 0.5rem;
+  z-index: 30; }
+  #cir3 .pic {
+    height: 0.7rem;
+    width: 0.7rem;
+    display: block;
+    background: url(../img/details/top.png) no-repeat;
+    background-size: 100%;
+    margin: 0 auto; }
+
+#nav {
+  overflow: hidden;
+  opacity: 0; }
+
+.closecir {
+  height: 2.5rem;
+  width: 2.5rem;
+  position: absolute;
+  bottom: 3.25rem;
+  right: 0;
+  display: none;
+  text-align: center;
+  font-weight: 200;
+  background: #FF5577;
+  border-radius: 50%;
+  font-size: 1.75rem;
+  color: #fff;
+  box-sizing: border-box; }
+
+.car {
+  position: absolute;
+  bottom: 3.25rem;
+  right: 0.25rem;
+  width: 5rem;
+  height: 2rem; }
+  .car em {
+    font-size: 0.7rem;
+    color: #fff;
+    width: 56px;
+    line-height: 40px;
+    text-align: center;
+    float: left; }
+  .car span {
+    float: right;
+    display: inline-block;
+    font-family: "iconfont";
+    text-align: center;
+    line-height: 2rem;
+    background: #fff;
+    height: 2rem;
+    width: 2rem;
+    color: #9c9c9c;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+    border-radius: 50%; }
+
+/*# sourceMappingURL=detail.css.map */

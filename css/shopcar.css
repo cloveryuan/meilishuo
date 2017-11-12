@@ -1,0 +1,194 @@
+html, body {
+  height: 100%;
+  font-size: 20px;
+  background: #f6f6f6; }
+
+body, html, div, i, em, span, ul, li, img, input, p, a, h2, h3, h4, h5, dl, dt, dd, input, label {
+  padding: 0;
+  margin: 0; }
+
+i, em, li, label {
+  font-style: normal; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1.9rem;
+  line-height: 1.9rem;
+  background: #fafafa;
+  border-bottom: 1px solid #c9c7c8;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden; }
+  #header i, #header em {
+    font-family: "iconfont";
+    display: inline-block;
+    line-height: 1.9rem;
+    font-size: 0.65rem;
+    color: #939393; }
+  #header label {
+    text-align: center;
+    font-size: 0.65rem;
+    color: #5e5e5e;
+    padding: 0 3.65rem 0 5.3rem; }
+    #header label span {
+      padding: 0 0.1rem; }
+  #header i {
+    float: left;
+    padding-left: 0.65rem; }
+  #header em {
+    float: right;
+    padding-right: 0.3rem; }
+  #header p {
+    display: inline-block;
+    float: right;
+    margin-right: 0.45rem;
+    color: #727272;
+    line-height: 1.9rem;
+    font-size: 0.65rem;
+    color: #939393; }
+
+#title-img {
+  background-image: url(../img/shopcar/shopcar1.gif);
+  width: 100%;
+  height: 2.4rem;
+  background-size: cover;
+  margin-top: 1.9rem; }
+
+#shopcar {
+  margin-top: 0.5rem;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 0.5rem; }
+  #shopcar h3 {
+    padding: 0.35rem 0.65rem;
+    font-size: 0.65rem;
+    font-weight: 400;
+    background: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    background: #fff; }
+    #shopcar h3 .inp1 {
+      width: 0.9rem;
+      height: 0.9rem;
+      margin-right: 0.45rem;
+      background: url(../img/shopcar/checkbox.png) 0 100% no-repeat;
+      background-size: cover;
+      border: none;
+      outline: none;
+      vertical-align: middle; }
+    #shopcar h3 a {
+      color: #5e5e5e;
+      font-size: 0.6rem; }
+    #shopcar h3 .tick {
+      float: right;
+      font-size: 0.55rem;
+      color: #5e5e5e; }
+  #shopcar .tit2 {
+    overflow-X: hidden;
+    padding: 0.7rem;
+    position: relative;
+    background: #fff; }
+    #shopcar .tit2 .inp2 {
+      width: 0.9rem;
+      height: 0.9rem;
+      background: url(../img/shopcar/checkbox.png) 0 100% no-repeat;
+      background-size: 0.9rem auto;
+      border: none;
+      outline: none;
+      vertical-align: middle;
+      margin-right: 0.8rem;
+      position: absolute;
+      left: 0.65rem;
+      top: 1.75rem; }
+    #shopcar .tit2 a {
+      display: inline-block;
+      padding-left: 1.65rem;
+      float: left; }
+      #shopcar .tit2 a img {
+        height: 4rem;
+        width: 2.8rem;
+        visibility: inherit;
+        display: inherit; }
+    #shopcar .tit2 .mess {
+      overflow: hidden;
+      line-height: 0.9rem;
+      padding-left: 0.6rem;
+      position: relative; }
+      #shopcar .tit2 .mess p {
+        color: #5e5e5e;
+        font-size: 0.55rem; }
+      #shopcar .tit2 .mess em {
+        font-size: 0.5rem;
+        display: block;
+        color: #999;
+        font-weight: 450; }
+      #shopcar .tit2 .mess b, #shopcar .tit2 .mess del, #shopcar .tit2 .mess span {
+        color: #333;
+        display: inline-block;
+        font-size: 0.6rem; }
+      #shopcar .tit2 .mess del {
+        color: #999;
+        margin-left: 0.2rem; }
+      #shopcar .tit2 .mess span {
+        color: #999;
+        position: absolute;
+        right: 0;
+        bottom: 0; }
+  #shopcar input[type=checkbox] {
+    -webkit-appearance: none;
+    -webkit-user-select: text; }
+
+#footer {
+  width: 16rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  padding: 0.8rem 0.7rem;
+  background: #fefefe;
+  font-size: 0.6rem;
+  box-sizing: border-box; }
+  #footer input {
+    width: 0.9rem;
+    height: 0.9rem;
+    margin-right: 0.45rem;
+    background: url(../img/shopcar/checkbox.png) 0 100% no-repeat;
+    background-size: 0.9rem auto;
+    border: none;
+    outline: none;
+    vertical-align: middle; }
+  #footer input[type=checkbox] {
+    -webkit-appearance: none;
+    -webkit-user-select: text; }
+  #footer label {
+    color: #5e5e5e; }
+    #footer label span {
+      margin: 0 0.25rem; }
+  #footer i {
+    color: #f04595;
+    margin-left: 0.5rem;
+    line-height: 0.75rem; }
+  #footer a {
+    display: inline-block;
+    background: #ff5777;
+    height: 1.5rem;
+    width: 4.3rem;
+    color: #fff;
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    border-radius: 0.25rem;
+    position: absolute;
+    right: 0.9rem;
+    bottom: 0.4rem; }
+
+/*# sourceMappingURL=shopcar.css.map */

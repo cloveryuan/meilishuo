@@ -1,0 +1,432 @@
+html,body{
+	height:100%;
+	font-size:20px;
+	background:#f6f6f6;
+}
+body,html,div,i,em,span,ul,li,img,input,p,a,h3,h4,h5,dl,dt,dd{
+	padding:0;
+	margin:0;
+}
+i,em,li{
+	font-style:normal;
+}
+li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+@function num($val){
+	@return $val/20;
+}
+@mixin i($val1,$val2,$val3){
+	font-size:$val1;
+	color:$val2;
+	font-family:$val3;
+}
+@mixin nomal($val1,$val2){
+	font-size:$val1;
+	color:$val2;
+}
+@mixin position($num1,$num2){
+	position:absolute;
+	top:$num1;
+	left:$num2;
+}
+@mixin HeWid($num1,$num2,$num3){
+	height:$num1;
+	width:$num2;
+	background:$num3;
+}
+@mixin bordRid($num1){
+	border-radius:$num1;
+}
+@mixin opacity($num1,$num23){
+	opacity:$num1;
+	filter:alpha(opacity=$num2);
+}
+$lef:left;
+$rig:right;
+.search{
+	padding:5px num(14rem);
+	overflow:hidden;
+	background:#fff;
+	display:flex;
+	flex-direction:row;
+	-webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -moz-box-orient:vertical;
+    -moz-box-direction:normal;
+    -webkit-flex-direction:row;
+	justify-content:space-around;
+	border-bottom:1px solid #e5e5e5;
+	i{
+		@include i(num(18rem),#cfcfcf,"iconfont")
+	}
+	.first{
+		float:$lef;
+		 line-height:num(26rem);
+	}
+	.last{
+		float:$rig;
+		line-height:num(26rem);
+	}
+	div{
+		float:$lef;
+		@include HeWid(num(26rem),auto,#eee);
+		position:relative;
+		@include bordRid(4px);
+		i{	
+			@include nomal(num(14rem),#cfcfcf);
+		    @include position(num(8rem),5px);
+		}
+		input{
+			border:none;
+			outline:none;
+			display:block;
+			@include HeWid(100%,num(200rem),#eee);
+			margin-left:num(30rem);
+		}
+	}
+}
+#banner{
+	@include HeWid(num(181rem),100%,0);
+	position:relative;
+	img{
+		height:100%;
+		width:100%;
+		}
+	ul{
+		@include HeWid(num(16rem),num(100rem),0);
+		@include position(num(164rem),num(9rem));
+		@include bordRid(num(10rem));
+		box-sizing:border-box;
+		padding:num(3rem) 2px;
+		@include position(0.3,30);
+		li{
+			@include HeWid(num(10rem),num(10rem),#fff);
+			margin-#{$rig}:num(10rem);
+			float:$lef;
+			@include bordRid(50%);
+		}
+	}
+}
+#smallBAN{
+	overflow:hidden;
+	background:#fff;
+	li{
+		width:num(104rem);
+		margin:num(18rem) 0 num(15rem) 0;
+		float:left;
+		a{
+			display:block;
+			margin:num(-8rem) auto 0;
+			text-align:center;
+			h3{
+				@include  nomal(num(13rem),#ff6801);
+				font-weight:400;
+			}
+			p{
+				@include nomal(num(12rem),#666);
+				padding-bottom:num(15rem);
+			}
+			img{
+				@include HeWid(num(28rem),num(28rem),0);
+				display:inline-block;
+				
+			}
+		}
+	}
+	.sec{
+		border-left:1px solid #eee;
+		border-right:1px solid #eee;
+	}
+}
+#kill{
+	background:#fff;
+	width:100%;
+	margin-top:num(9rem);
+	overflow:hidden;
+	div{
+		height:num(18rem);
+		line-height:num(18rem);
+		padding:15px;
+		h3{
+			@include nomal(num(12rem),#000);
+			font-weight:450;
+			float:left;
+			margin-right:num(6rem);
+		}
+		span{
+			display:block;
+			@include HeWid(num(18rem),num(18rem),#000);
+			@include nomal(num(12rem),#fff);
+			line-height:num(18rem);
+			text-align:center;
+			float:left;
+		}
+		em{
+			display:block;
+			@include HeWid(num(18rem),num(8rem),#fff);
+			@include nomal(num(10rem),#000);
+			line-height:num(18rem);
+			text-align:center;
+			font-weight:600;
+			float:left;
+		}
+		h5{
+			@include nomal(num(10rem),#999);
+			float:right;
+			margin-right:num(5rem);
+		}
+		i{
+			@include i(num(8rem),#999,"iconfont");
+			float:right;
+			color:#999;
+		}
+	}
+	ul{
+		overflow:hidden;
+		white-space:nowrap;
+		margin-bottom:num(10rem);
+		@include HeWid(num(118rem),num(320rem),#fff);
+		li{
+			@include HeWid(num(117rem),num(72rem),#fff);
+			text-align:left;
+			display:inline-block;
+			margin-left:num(10rem);
+			a img{
+					display:block;
+					margin:0 auto;
+					height:num(64rem);
+				}
+			h4{
+				@include nomal(num(11rem),#666);
+				overflow: hidden;
+				text-overflow:ellipsis;
+				white-space:nowrap; 
+				margin-top:10px;
+			}
+			i:nth-child(3){
+				@include nomal(num(9rem),#ff547b);
+				@include HeWid(num(10rem),num(38rem),0);
+				font-weight:350;
+			}
+			i:nth-child(4){
+				@include nomal(num(9rem),#888);
+				display:inline-block;
+				@include HeWid(num(10rem),num(20rem),0);
+				font-weight:350;
+				text-decoration:line-through;
+				overflow: hidden;
+				text-overflow:ellipsis;
+				white-space:nowrap; 
+			}
+		}
+	}
+
+}
+#sale{
+	@include HeWid(num(281rem),100%,#fff);
+	margin-top:num(10rem);
+	h4{
+		@include nomal(num(12rem),#333);
+		font-weight:450;
+		margin-left:num(12rem);
+		line-height:num(36rem)
+	}
+	ul{
+		@include HeWid(num(245rem),num(320rem),#fff);
+		border-top:1px solid #e5e5e5;
+		box-sizing:border-box;
+		.sale-first{
+			width:num(158rem);
+			height:num(138rem);
+			border-bottom:1px solid #e5e5e5;
+			border-right:1px solid #e5e5e5;
+			box-sizing:border-box;
+			float:left;
+			overflow:hidden;		
+			a{
+				display:block;
+				text-align:center;
+				@include HeWid(num(106rem),num(68rem),0);
+				margin:num(25rem) auto 0;
+				h3{
+					@include  nomal(num(12rem),#333);
+					font-weight:400;
+				}
+				p{
+					@include nomal(num(12rem),#ff547b);
+				}
+				img{
+					@include HeWid(num(75rem),100%,0);
+				}	
+			}
+		}
+		.sale-li{
+			@include HeWid(num(69rem),num(157rem),0);
+			border-bottom:1px solid #e5e5e5;
+			box-sizing:border-box;
+			float:left;
+			overflow:hidden;
+			a{
+				@include HeWid(num(68rem),num(159rem),0);
+				padding:num(20rem) num(12rem);
+				display:block;
+				box-sizing:border-box;
+				h3{
+					@include  nomal(num(12rem),#333);
+					font-weight:400;
+					max-width:num(95rem);
+					float:left;
+				}
+				p{
+					@include nomal(num(12rem),#ff547b);
+					max-width:num(95rem);
+					clear:both;
+					float:left;
+				}
+				img{
+				float:right;
+				margin-top:num(-26rem);
+				@include HeWid(num(57rem),num(32rem),0);
+
+				}
+			}
+		}
+		.sale-bottom{
+			@extend .sale-first;
+			@include HeWid(num(106rem),num(105rem),0);
+			border-bottom:0;
+			box-sizing:border-box;
+			float:right;
+			a{
+				@include HeWid(num(95rem),num(74rem),0);
+				margin:num(8rem) auto;
+				img{
+					@include HeWid(num(57rem),num(36rem),0);
+					padding-bottom:num(8rem);
+					padding-top:num(12rem);
+					box-sizing:border-box;
+			}
+			}
+
+		}
+	}
+}
+#font-page{
+	@include HeWid(num(77rem),num(320rem),#f6f6f6);
+	padding-top:num(10rem);
+	a{
+		display:block;
+		@include HeWid(num(69rem),num(98rem),0);
+		float:left;
+		margin-left:num(8rem);
+		img{
+			@include HeWid(100%,num(98rem),0);
+		}
+	}
+}
+#hot{
+	@include HeWid(num(368rem),100%,#fff);
+	.hot-tittle{
+		width:100%;
+		overflow:hidden;
+		background-position:center center;
+		height:num(40rem);
+		width:100%;
+		background:url(../img/bg.png) no-repeat center center;
+		background-size:num(132rem) num(2rem);
+		p{
+			line-height:num(44rem);
+			height:num(44rem);
+			font-size:num(13rem);
+			text-align:center;
+		}
+	}
+	.hot-content .box{
+		display:block;
+		color:#000;
+		@include HeWid(num(81rem),100%,#fff);
+		text-align:center;
+		img{
+			@include HeWid(num(48rem),num(48rem),#fff);
+		}
+		dt{
+			@include HeWid(num(48rem),100%,#fff);
+		}
+		dl{
+			@include HeWid(num(81rem),num(79rem),#fff);
+			float:left;
+		}
+		dd{
+			@include HeWid(num(33rem),num(79rem),#fff);
+			font-size:num(12rem);
+			text-align:top;
+		}
+	}
+}
+#enjoy{
+	width:100%;
+	overflow:hidden;
+	.enjoy-tittle{
+		background-position:center center;
+		height:num(50rem);
+		width:100%;
+		background:url(../img/bg.png) no-repeat center center;
+		background-size:num(132rem) num(2rem);
+		p{
+			font-size:num(13rem);
+			height:num(50rem);
+			text-align:center;
+			line-height:num(50rem);
+		}
+	}
+	.enjoy-content{
+		overflow:hidden;
+		dt img{
+			@include HeWid(num(197rem),num(148rem),#fff);
+		}
+		dl{
+			@include HeWid(num(264rem),num(148rem),#fff);
+			margin:0 num(4rem) num(5rem) num(6rem);
+			display:inline-block;
+			float:left;
+		}
+		dt{
+			@include HeWid(num(197rem),num(148rem),#fff);
+		}
+		dd{
+			@include HeWid(num(53rem),num(135rem),#fff);
+			padding:num(5rem) num(8rem) num(10rem) num(5rem);
+			font-size:0;
+			span{
+				display:inline-block;
+				background:#eff3f6;
+				height:num(16rem);
+				max-width:num(130rem);
+				line-height:num(16rem);
+				padding:num(2rem) num(3rem);
+				@include nomal(num(11rem),#64757e);
+				margin:num(2rem) num(3rem) 0 0;
+			}
+			.collect{
+				vertical-align:center;
+			}
+			h5{
+				@include nomal(num(10rem),#000);
+				margin-top:num(3rem);
+				max-width:num(40rem);
+				float:left
+			}
+			i,em{
+				float:right;
+				display:inline-block;
+				@include nomal(num(10rem),#7a7d7d);
+				float:right;
+			}
+		}
+
+	}
+}

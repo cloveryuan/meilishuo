@@ -1,0 +1,157 @@
+@function num($val){
+	@return $val/20;
+}
+html,body{
+	height:100%;
+	font-size:20px;
+	background:#fff;
+}
+body,html,div,i,em,span,ul,li,img,input,p,a,h3,h4,h5,dl,dt,dd,input{
+	padding:0;
+	margin:0;
+}
+i,em,li{
+	font-style:normal;
+}
+li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+@mixin i($val1,$val2,$val3){
+	font-size:$val1;
+	color:$val2;
+	font-family:$val3;
+}
+@mixin nomal($val1,$val2){
+	font-size:$val1;
+	color:$val2;
+}
+@mixin position($num1,$num2){
+	position:absolute;
+	top:$num1;
+	left:$num2;
+}
+@mixin HeWid($num1,$num2,$num3){
+	height:$num1;
+	width:$num2;
+	background:$num3;
+}
+@mixin bordRid($num1){
+	border-radius:$num1;
+}
+@mixin opacity($num1,$num23){
+	opacity:$num1;
+	filter:alpha(opacity=$num2);
+}
+#header{
+	width:num(320rem);
+	height:num(38rem);
+	border-bottom:1px solid #c9c7c8;
+	text-align:center;
+	i{
+		font-family:"iconfont";
+		float:left;
+		display:inline-block;
+		line-height:num(38rem);
+		@include nomal(num(14rem),#939393);
+		padding-left:num(15rem);
+	}
+	em{
+		float:right;
+		line-height:num(38rem);
+		@include nomal(num(13rem),#5e5e5e);
+	}
+	span{
+		display:inline-block;
+		line-height:num(38rem);
+		@include nomal(num(13rem),#5e5e5e);
+		padding-right:num(29rem);		
+	}
+}
+#center{
+	padding:0 num(12rem);
+	overflow:hidden;
+}
+#bank{
+	text-align:center;
+	padding:num(44rem) 0 num(10rem) 0;
+	@include nomal(num(13rem),#666);
+}
+#inp1{
+	border-bottom:1px solid #ededed;
+	color:#ededed;
+	width:100%;
+	height:num(37rem);
+	input{
+		width:100%;
+		outline:none;
+		border:none;
+		text-align:center;
+		line-height:num(36rem);
+	}
+}
+input::-webkit-input-placeholder{
+	color:#ccc;
+	font-size:num(22rem);
+}
+input:-moz-input-placeholder{
+	color:#ccc;
+	font-size:num(22rem);
+}
+input::-moz-input-placeholder{
+	color:#ccc;
+	font-size:num(22rem);
+}
+input::-ms-input-placeholder{
+	color:#ccc;
+	font-size:num(22rem);
+}
+#code{
+	@extend #bank;
+	padding-top:num(19rem);
+}
+#inp2{
+	@extend #inp1;
+}
+#login{
+	padding-top:num(21rem);
+	height:num(72rem);
+	width:100%;
+	position:relative;
+	.btn-inp{
+		overflow:hidden;
+		width:100%;
+		height:num(42rem);
+		margin: 0 auto;
+		input{
+			width:100%;
+			height:100%;
+			text-align:center;
+			color:#fff;
+			font-size:num(14rem);
+			background:#ff1877;
+			border:0;
+			outline:0;
+			border-radius:num(4rem);
+		}
+	}
+	span{
+		margin-top:num(16rem);
+		font-size:num(13rem)
+	}
+	span:nth-child(2){
+		float:left;
+		color:#999;
+	}
+	span:nth-child(3){
+		float:right;
+		color:#ff6885;
+	}
+}
+#QQ{
+	margin-top:num(84rem);
+	overflow: hidden;
+	text-align:center;
+}
